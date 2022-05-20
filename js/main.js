@@ -12,6 +12,7 @@ per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
 
 
 */
+//MILESTONE 1 
 
 for(let i = 1 ; i <= 100 ; i++){
     if(i%3===0 && i%5===0){
@@ -28,24 +29,29 @@ for(let i = 1 ; i <= 100 ; i++){
     }
 }
 
-
+//MILESTONE 2 AND MILESTONE 3 s
 const containerElement = document.querySelector(".row");
 let testo = "";
+let classeColore = "";
 
 
 for(let i = 1 ; i <= 100 ; i++){
     if(i%3===0 && i%5===0){
        testo = "FizzBuzz";
+       classeColore = "fizzbuzz"
     }
     else if(i%5===0){
         testo = "Buzz"
+        classeColore = "buzz";
     }
     else if (i%3===0){
         testo = "Fizz"
+        classeColore = "fizz";
     }
     else{
         testo = i;
+        classeColore = "number";
     }
-    containerElement.innerHTML += `<div class="square"><span class="text-white">${testo}</span></div>`;
+    containerElement.innerHTML += `<div class="square ${classeColore}"><span class="text-white">${testo}</span></div>`;
 
 }

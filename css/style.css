@@ -8,10 +8,14 @@ body {
     background: #083B4C;
 }
 
+/* UTILITIES CLASSES FOR COLORS */
+.number {background: #1389B2;}
+.fizz {background: #0BD6A1;}
+.buzz {background: #FFD166;}
+.fizzbuzz {background: #F0466F;}
 
 .square {
     width: calc(100% / 7 - 20px);  
-    background: #000;
     aspect-ratio: 1/1;
     position: relative;
 }

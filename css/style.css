@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: #083B4C;
+}
+
+
+.square {
+    width: calc(100% / 7 - 20px);  
+    background: #000;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.gap {
+    gap: 20px;
+}
+
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}

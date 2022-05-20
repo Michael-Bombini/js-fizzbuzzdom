@@ -52,6 +52,6 @@ for(let i = 1 ; i <= 100 ; i++){
         testo = i;
         classeColore = "number";
     }
-    containerElement.innerHTML += `<div class="square ${classeColore}"><span class="text-white">${testo}</span></div>`;
+    containerElement.innerHTML += `<div class="square ${classeColore}"><span class="text-black">${testo}</span></div>`;
 
 }

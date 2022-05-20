@@ -30,22 +30,22 @@ for(let i = 1 ; i <= 100 ; i++){
 
 
 const containerElement = document.querySelector(".row");
-
+let testo = "";
 
 
 for(let i = 1 ; i <= 100 ; i++){
     if(i%3===0 && i%5===0){
-        console.log("FizzBuzz");
+       testo = "FizzBuzz";
     }
     else if(i%5===0){
-        console.log("Buzz");
+        testo = "Buzz"
     }
     else if (i%3===0){
-        console.log("Fizz");
+        testo = "Fizz"
     }
     else{
-        console.log(i);
+        testo = i;
     }
-    containerElement.innerHTML += `<div class="square"><span class="text-white"></span></div>`;
+    containerElement.innerHTML += `<div class="square"><span class="text-white">${testo}</span></div>`;
 
 }
